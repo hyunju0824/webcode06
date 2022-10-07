@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 720px;
+            border: 1px dotted green;
+            margin: 0;
+        }
+        h1{
+            border: 2px solid red;
+            position: absolute; /*부모위치로 감. (=>겹치는 현상 발생)*/
+            top: 0;
+            left: 250px;
+            margin: 0;
+
+            background-color: yellow;
+            z-index: 99; /*위로 올리기(포토샵에서 레이어 위로 올리듯이)*/
+            /*0, 9, 99, 999 값이 큰놈이 위로 올라온다.*/
+        }
+        p{
+            width: 500px;
+            border: 2px solid blue;
+            position: relative;
+            /* z-index: 99; */
+            background-color: pink;
+
+
+            z-index: 9;
+        }
+        .footnav{ /*하단 네비게이션*/
+            position: fixed;  
+            /*ㄴ 바디에서 삐져나옴. 보더밖으로  =>내용이 많아져도 고정적으로 위치*/
+            bottom: 0;
+            width: 100%;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>1-자전거 소개</h1>
+    <p>2-자전거의 역사 소개
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque, aut officiis dolore blanditiis quam libero consectetur quaerat repellendus inventore eius officia ipsum totam dignissimos minus nobis adipisci voluptatibus ea.
+    </p>
+    <p class="rel">3-자전거의 종류 소개
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt minima consequuntur distinctio omnis, nulla quae, inventore, corporis quis hic rerum esse provident ipsa aliquid possimus optio in natus doloremque.
+    </p>
+    <p>2-자전거의 역사 소개
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque, aut officiis dolore blanditiis quam libero consectetur quaerat repellendus inventore eius officia ipsum totam dignissimos minus nobis adipisci voluptatibus ea.
+    </p>
+    <p class="rel">3-자전거의 종류 소개
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt minima consequuntur distinctio omnis, nulla quae, inventore, corporis quis hic rerum esse provident ipsa aliquid possimus optio in natus doloremque.
+    </p>
+    <p>2-자전거의 역사 소개
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque, aut officiis dolore blanditiis quam libero consectetur quaerat repellendus inventore eius officia ipsum totam dignissimos minus nobis adipisci voluptatibus ea.
+    </p>
+    <p class="rel">3-자전거의 종류 소개
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt minima consequuntur distinctio omnis, nulla quae, inventore, corporis quis hic rerum esse provident ipsa aliquid possimus optio in natus doloremque.
+    </p>
+    <p>2-자전거의 역사 소개
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque, aut officiis dolore blanditiis quam libero consectetur quaerat repellendus inventore eius officia ipsum totam dignissimos minus nobis adipisci voluptatibus ea.
+    </p>
+    <p class="rel">3-자전거의 종류 소개
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt minima consequuntur distinctio omnis, nulla quae, inventore, corporis quis hic rerum esse provident ipsa aliquid possimus optio in natus doloremque.
+    </p>
+    <p>2-자전거의 역사 소개
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque, aut officiis dolore blanditiis quam libero consectetur quaerat repellendus inventore eius officia ipsum totam dignissimos minus nobis adipisci voluptatibus ea.
+    </p>
+    <p class="rel">3-자전거의 종류 소개
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt minima consequuntur distinctio omnis, nulla quae, inventore, corporis quis hic rerum esse provident ipsa aliquid possimus optio in natus doloremque.
+    </p>
+
+    <div class="footnav">
+        <h2>하단 네비게이션: 메뉴1, 메뉴2, 메뉴3</h2>
+    </div>
+</body>
+</html>
